@@ -76,7 +76,7 @@
 @media screen and (min-device-width:320px) and  (max-device-width:767px)  {
    
     
-    .row {
+    .yellow,.red,.blue {
        flex-direction: column ;
         }
   
