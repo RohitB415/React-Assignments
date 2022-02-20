@@ -1,1 +1,86 @@
+.container {
+    width: auto;
+    height: auto;
+}
 
+.row{
+    display: block;
+    width: auto;
+}
+
+.yellow ,.red,.blue{
+    display: flex;
+}
+.yellow .content
+{
+    background-color: orange;
+    margin: 10px;
+    height: 200px;
+}
+.red .content{
+
+    background-color: lightcoral;
+    margin: 10px;
+    height: 200px;
+
+}
+
+.blue .content{
+
+    background-color: lightskyblue;
+    margin: 10px;
+    height: 200px;
+
+}
+
+
+/* ------------------ Min width : 1024--------------------*/
+@media screen and (min-device-width:1024px) {
+   
+    
+    .yellow .content, .red .content,.blue .content{
+        flex: 1 1 auto;
+       
+        
+        }
+  
+    
+
+    
+}
+
+
+/* ------------------ Min width : 768--------------------*/
+@media screen and (min-device-width:768px) and  (max-device-width:1023px)  {
+   
+    
+    .yellow .content,.red .content{
+       
+        flex: 1 1 auto;
+        
+    }
+  
+    
+   
+    
+   
+    
+    .blue{
+        flex-direction: column ;
+    }
+    
+    
+}
+
+/* ------------------ Min width : 320--------------------*/
+@media screen and (min-device-width:320px) and  (max-device-width:767px)  {
+   
+    
+    .row {
+       flex-direction: column ;
+        }
+  
+    
+    
+    
+}
