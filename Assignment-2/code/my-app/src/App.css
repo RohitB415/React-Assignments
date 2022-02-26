@@ -2,6 +2,29 @@
   text-align: center;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h1{
+  color: #61dafb;
+}
+.profile-info{
+  margin: 10px;
+  text-align: left;
+}
+
+.profile-info label{
+  font-size: 13px;
+  color: #323234;
+}
+.profile-info label,.profile-info strong{
+  display: block;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
